@@ -10,3 +10,38 @@ interface Teacher {
 interface Directors extends Teacher {
     numberOfReports: number;
 }
+
+interface printTeacherFunction {
+    firstName: string;
+    lastName: string;
+}
+
+function printTeacher(params: printTeacherFunction) {
+    return `${params.firstName[0]}.${params.lastName}`
+}
+
+class StudentClass implements StudentClassInterface {
+    firstName: string;
+    lastName: string;
+    constructor(firstName: string, lastName: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    workOnHomework() {
+        return "Currently working";
+    }
+
+    displayName() {
+        return `${this.firstName}`;
+    }
+}
+
+interface StudentClassInterface {
+    firstName: string;
+    lastName: string;
+    workOnHomework(): string;
+    displayName(): string;
+}
+
+
