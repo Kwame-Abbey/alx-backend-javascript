@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "* How to use Mocha to write a test suite * How to use different assertion libraries (Node or Chai) * How to present long test suites * When and how to use spies * When and how to use stubs * What are hooks and when to use them * Unit testing with Async functions * How to write integration tests with a small node server",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "mocha"
   },
@@ -11,9 +12,11 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.5.0",
-    "eslint": "^9.5.0",
     "globals": "^15.6.0",
     "mocha": "^10.4.0",
     "typescript-eslint": "^7.13.1"
+  },
+  "dependencies": {
+    "chai": "^5.1.1"
   }
 }
