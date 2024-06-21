@@ -17,6 +17,7 @@
     "typescript-eslint": "^7.13.1"
   },
   "dependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "sinon": "^18.0.0"
   }
 }
